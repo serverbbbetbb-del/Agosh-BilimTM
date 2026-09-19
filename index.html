@@ -1,111 +1,9 @@
-.search-box button{
-        padding:13px;
-    }
-}
-</style></head><body><header>
-    <div class="logo">🇹🇲 BilimTM</div><nav>
-    <a href="#home">Baş sahypa</a>
-    <a href="#features">Mümkinçilikler</a>
-    <a href="#subjects">Dersler</a>
-    <a href="#ai">AI</a>
-</nav>
-
-</header><div class="flag-line"></div><section class="hero" id="home"><div class="flag">🇹🇲</div>
-
-<h1>Bilim<span>TM</span></h1>
-
-<p>
-    Türkmenistan üçin döwrebap sanly bilim platformasy.
-    Dersleri öwreniň, kitaplary gözläň we okuw işleriňizde
-    zerur kömegi alyň.
-</p>
-
-</section><div class="search"><div class="search-box">
-
-    <input
-        id="searchInput"
-        type="text"
-        placeholder="Näme gözleýärsiňiz?"
-    >
-
-    <button onclick="searchSite()">Gözle</button>
-
-</div>
-
-</div><section id="features"><div class="container"><div class="title">
-    <h2>BilimTM-de näme bar?</h2>
-    <p>Okuw üçin zerur mümkinçilikleriň hemmesi bir ýerde.</p>
-</div>
-
-<div class="cards">
-
-    <div class="card" onclick="soon('Kitaplar')">
-        <div class="icon">📚</div>
-        <h3>Kitaplar</h3>
-        <p>
-            Dersler boýunça okuw kitaplaryny
-            we materiallaryny gözläň.
-        </p>
-    </div>
-
-    <div class="card" onclick="soon('Öý işlerine kömek')">
-        <div class="icon">✏️</div>
-        <h3>Öý işlerine kömek</h3>
-        <p>
-            Öý işleriňizi düşünmek we çözmek
-            üçin kömek alyň.
-        </p>
-    </div>
-
-    <div class="card" onclick="soon('Testler')">
-        <div class="icon">📝</div>
-        <h3>Testler</h3>
-        <p>
-            Bilimiňizi dürli soraglar
-            arkaly barlaň.
-        </p>
-    </div>
-
-    <div class="card" onclick="soon('AI kömekçi')">
-        <div class="icon">🤖</div>
-        <h3>AI kömekçi</h3>
-        <p>
-            Okuw soraglaryňyz boýunça
-            akylly kömekçi.
-        </p>
-    </div>
-
-</div>
-
-</div></section><section class="subjects" id="subjects"><div class="container"><div class="title">
-    <h2>Dersler</h2>
-    <p>Öwrenmek isleýän dersiňizi saýlaň.</p>
-</div>
-
-<div class="subject-grid">
-
-    <div class="subject" onclick="soon('Matematika')">
-        ➗ &nbsp; Matematika
-    </div>
-
-    <div class="subject" onclick="soon('Fizika')">
-        ⚛️ &nbsp; Fizika
-    </div>
-
-    <div class="subject" onclick="soon('Himiýa')">
-        🧪 &nbsp; Himiýa
-    </div>
-
-    <div class="subject" onclick="soon('Biologiýa')">
-        🧬 &nbsp; Biologiýa
-    </div>
-
-    <div class="subject" onclick="soon('Türkmen dili')">
+<div class="subject" onclick="soon('Türkmen dili')">
         🔤 &nbsp; Türkmen dili
     </div>
 
-    <div class="subject" onclick="soon('Edebiýat')">
-        📖 &nbsp; Edebiýat
+    <div class="subject" onclick="soon('Türkmen edebiýaty')">
+        📖 &nbsp; Türkmen edebiýaty
     </div>
 
     <div class="subject" onclick="soon('Taryh')">
@@ -118,22 +16,25 @@
 
 </div>
 
-</div></section><section class="ai" id="ai"><div class="container"><div class="ai-box">
+</div></section><section class="ai-section" id="ai"><div class="container"><div class="ai-box">
 
     <h2>🤖 BilimTM AI</h2>
 
     <p>
-        Öý işlerine we derslere kömek edýän ýörite
-        AI kömekçi ýakyn wagtda BilimTM-e goşular.
+        Öý işleriňize we dersleriňize kömek edýän
+        ýörite AI kömekçi.
     </p>
 
-    <button class="button" onclick="soon('BilimTM AI')">
+    <button
+        class="button button-white"
+        onclick="soon('BilimTM AI')"
+    >
         Tiz wagtdan
     </button>
 
 </div>
 
-</div></section><footer><strong>🇹🇲 BilimTM</strong>
+</div></section><footer><h2>🇹🇲 BilimTM</h2>
 
 <p>
     Türkmenistan üçin sanly bilim platformasy.
@@ -145,21 +46,20 @@
 
 </footer><script>
 
-function soon(name){
+function soon(name) {
 
     alert(
-        name +
-        " bölümi häzirlikçe taýýarlanýar."
+        name + " bölümi indiki tapgyrda goşular."
     );
 
 }
 
-function searchSite(){
+function searchSite() {
 
-    let text =
+    const text =
         document.getElementById("searchInput").value.trim();
 
-    if(text === ""){
+    if (text === "") {
 
         alert("Gözlemek üçin bir zat ýazyň.");
 
@@ -167,9 +67,7 @@ function searchSite(){
     }
 
     alert(
-        '"' +
-        text +
-        '" boýunça gözleg ulgamy indiki tapgyrda goşular.'
+        '"' + text + '" üçin gözleg ulgamy indiki tapgyrda goşular.'
     );
 
 }
