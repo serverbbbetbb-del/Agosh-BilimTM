@@ -1,0 +1,65 @@
+// ================================
+// BilimTM - script.js
+// ================================
+
+// Bölüm henüz hazır değilse
+function soon(name) {
+    alert(name + " bölümi indiki tapgyrda goşular.");
+}
+
+
+// ================================
+// ARAMA
+// ================================
+
+function searchSite() {
+
+    const input = document.getElementById("searchInput");
+
+    if (!input) {
+        return;
+    }
+
+    const text = input.value.trim();
+
+    if (text === "") {
+        alert("Gözlemek üçin bir zat ýazyň.");
+        input.focus();
+        return;
+    }
+
+    alert(
+        '"' + text + '" üçin gözleg ulgamy indiki tapgyrda goşular.'
+    );
+}
+
+
+// Enter tuşuna basınca arama
+document.addEventListener("DOMContentLoaded", function () {
+
+    const searchInput = document.getElementById("searchInput");
+
+    if (searchInput) {
+
+        searchInput.addEventListener("keydown", function (event) {
+
+            if (event.key === "Enter") {
+                searchSite();
+            }
+
+        });
+
+    }
+
+});
+
+
+// ================================
+// SAYFA YÜKLENDİ
+// ================================
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    console.log("BilimTM üstünlikli açyldy.");
+
+});
