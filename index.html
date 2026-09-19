@@ -1,173 +1,178 @@
-.hero-inner {
-            width: 100%;
-            max-width: 1200px;
-            margin: auto;
-            padding: 70px 25px;
-            position: relative;
-            z-index: 2;
-        }
+.search-box button{
+        padding:13px;
+    }
+}
+</style></head><body><header>
+    <div class="logo">🇹🇲 BilimTM</div><nav>
+    <a href="#home">Baş sahypa</a>
+    <a href="#features">Mümkinçilikler</a>
+    <a href="#subjects">Dersler</a>
+    <a href="#ai">AI</a>
+</nav>
 
-        .hero-badge {
-            display: inline-block;
-            background: rgba(255,255,255,0.14);
-            border: 1px solid rgba(255,255,255,0.25);
-            padding: 8px 14px;
-            border-radius: 30px;
-            font-size: 13px;
-            margin-bottom: 20px;
-        }
+</header><div class="flag-line"></div><section class="hero" id="home"><div class="flag">🇹🇲</div>
 
-        .hero h1 {
-            font-size: clamp(38px, 7vw, 72px);
-            line-height: 1;
-            margin-bottom: 20px;
-        }
+<h1>Bilim<span>TM</span></h1>
 
-        .hero h1 span {
-            color: #d9f7e5;
-        }
+<p>
+    Türkmenistan üçin döwrebap sanly bilim platformasy.
+    Dersleri öwreniň, kitaplary gözläň we okuw işleriňizde
+    zerur kömegi alyň.
+</p>
 
-        .hero p {
-            max-width: 680px;
-            font-size: 18px;
-            line-height: 1.7;
-            color: #e6fff0;
-            margin-bottom: 30px;
-        }
+</section><div class="search"><div class="search-box">
 
-        .hero-buttons {
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
+    <input
+        id="searchInput"
+        type="text"
+        placeholder="Näme gözleýärsiňiz?"
+    >
 
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 13px 20px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: 700;
-            transition: 0.2s;
-            cursor: pointer;
-            border: none;
-        }
+    <button onclick="searchSite()">Gözle</button>
 
-        .btn-primary {
-            background: white;
-            color: #00843d;
-        }
+</div>
 
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 7px 20px rgba(0,0,0,0.2);
-        }
+</div><section id="features"><div class="container"><div class="title">
+    <h2>BilimTM-de näme bar?</h2>
+    <p>Okuw üçin zerur mümkinçilikleriň hemmesi bir ýerde.</p>
+</div>
 
-        .btn-outline {
-            border: 1px solid rgba(255,255,255,0.6);
-            color: white;
-            background: transparent;
-        }
+<div class="cards">
 
-        .btn-outline:hover {
-            background: rgba(255,255,255,0.12);
-        }
+    <div class="card" onclick="soon('Kitaplar')">
+        <div class="icon">📚</div>
+        <h3>Kitaplar</h3>
+        <p>
+            Dersler boýunça okuw kitaplaryny
+            we materiallaryny gözläň.
+        </p>
+    </div>
 
-        /* =========================
-           SEARCH
-        ========================= */
+    <div class="card" onclick="soon('Öý işlerine kömek')">
+        <div class="icon">✏️</div>
+        <h3>Öý işlerine kömek</h3>
+        <p>
+            Öý işleriňizi düşünmek we çözmek
+            üçin kömek alyň.
+        </p>
+    </div>
 
-        .search-area {
-            max-width: 1050px;
-            margin: -35px auto 0;
-            position: relative;
-            z-index: 10;
-            padding: 0 20px;
-        }
+    <div class="card" onclick="soon('Testler')">
+        <div class="icon">📝</div>
+        <h3>Testler</h3>
+        <p>
+            Bilimiňizi dürli soraglar
+            arkaly barlaň.
+        </p>
+    </div>
 
-        .search-box {
-            background: white;
-            border-radius: 18px;
-            padding: 12px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            box-shadow: 0 10px 35px rgba(0,0,0,0.13);
-        }
+    <div class="card" onclick="soon('AI kömekçi')">
+        <div class="icon">🤖</div>
+        <h3>AI kömekçi</h3>
+        <p>
+            Okuw soraglaryňyz boýunça
+            akylly kömekçi.
+        </p>
+    </div>
 
-        .search-icon {
-            font-size: 23px;
-            padding-left: 10px;
-        }
+</div>
 
-        .search-box input {
-            width: 100%;
-            border: none;
-            outline: none;
-            font-size: 16px;
-            padding: 13px 5px;
-            color: #173b2b;
-        }
+</div></section><section class="subjects" id="subjects"><div class="container"><div class="title">
+    <h2>Dersler</h2>
+    <p>Öwrenmek isleýän dersiňizi saýlaň.</p>
+</div>
 
-        .search-box button {
-            border: none;
-            background: #00843d;
-            color: white;
-            padding: 13px 22px;
-            border-radius: 10px;
-            font-weight: bold;
-            cursor: pointer;
-        }
+<div class="subject-grid">
 
-        .search-box button:hover {
-            background: #006f32;
-        }
+    <div class="subject" onclick="soon('Matematika')">
+        ➗ &nbsp; Matematika
+    </div>
 
-        /* =========================
-           GENERAL
-        ========================= */
+    <div class="subject" onclick="soon('Fizika')">
+        ⚛️ &nbsp; Fizika
+    </div>
 
-        section {
-            padding: 75px 20px;
-        }
+    <div class="subject" onclick="soon('Himiýa')">
+        🧪 &nbsp; Himiýa
+    </div>
 
-        .container {
-            max-width: 1200px;
-            margin: auto;
-        }
+    <div class="subject" onclick="soon('Biologiýa')">
+        🧬 &nbsp; Biologiýa
+    </div>
 
-        .section-title {
-            text-align: center;
-            margin-bottom: 42px;
-        }
+    <div class="subject" onclick="soon('Türkmen dili')">
+        🔤 &nbsp; Türkmen dili
+    </div>
 
-        .section-title small {
-            color: #d22630;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
+    <div class="subject" onclick="soon('Edebiýat')">
+        📖 &nbsp; Edebiýat
+    </div>
 
-        .section-title h2 {
-            font-size: 34px;
-            margin-top: 8px;
-            color: #173b2b;
-        }
+    <div class="subject" onclick="soon('Taryh')">
+        🏛️ &nbsp; Taryh
+    </div>
 
-        .section-title p {
-            max-width: 650px;
-            margin: 12px auto 0;
-            color: #68756e;
-            line-height: 1.6;
-        }
+    <div class="subject" onclick="soon('Geografiýa')">
+        🌍 &nbsp; Geografiýa
+    </div>
 
-        /* =========================
-           FEATURES
-        ========================= */
+</div>
 
-        .features {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 18px;
-        }
+</div></section><section class="ai" id="ai"><div class="container"><div class="ai-box">
+
+    <h2>🤖 BilimTM AI</h2>
+
+    <p>
+        Öý işlerine we derslere kömek edýän ýörite
+        AI kömekçi ýakyn wagtda BilimTM-e goşular.
+    </p>
+
+    <button class="button" onclick="soon('BilimTM AI')">
+        Tiz wagtdan
+    </button>
+
+</div>
+
+</div></section><footer><strong>🇹🇲 BilimTM</strong>
+
+<p>
+    Türkmenistan üçin sanly bilim platformasy.
+</p>
+
+<p>
+    © 2026 BilimTM
+</p>
+
+</footer><script>
+
+function soon(name){
+
+    alert(
+        name +
+        " bölümi häzirlikçe taýýarlanýar."
+    );
+
+}
+
+function searchSite(){
+
+    let text =
+        document.getElementById("searchInput").value.trim();
+
+    if(text === ""){
+
+        alert("Gözlemek üçin bir zat ýazyň.");
+
+        return;
+    }
+
+    alert(
+        '"' +
+        text +
+        '" boýunça gözleg ulgamy indiki tapgyrda goşular.'
+    );
+
+}
+
+</script></body>
+</html>
