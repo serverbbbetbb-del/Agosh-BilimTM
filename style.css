@@ -1,65 +1,109 @@
-// ================================
-// BilimTM - script.js
-// ================================
-
-// Bölüm henüz hazır değilse
-function soon(name) {
-    alert(name + " bölümi indiki tapgyrda goşular.");
+.subject {
+    background: #f5faf7;
+    border: 1px solid #dce7df;
+    border-radius: 14px;
+    padding: 23px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
-
-// ================================
-// ARAMA
-// ================================
-
-function searchSite() {
-
-    const input = document.getElementById("searchInput");
-
-    if (!input) {
-        return;
-    }
-
-    const text = input.value.trim();
-
-    if (text === "") {
-        alert("Gözlemek üçin bir zat ýazyň.");
-        input.focus();
-        return;
-    }
-
-    alert(
-        '"' + text + '" üçin gözleg ulgamy indiki tapgyrda goşular.'
-    );
+.subject:hover {
+    background: #e6f5ec;
+    border-color: #00843d;
+    transform: translateY(-3px);
 }
 
+/* AI */
 
-// Enter tuşuna basınca arama
-document.addEventListener("DOMContentLoaded", function () {
+.ai-section {
+    background: #eef7f1;
+}
 
-    const searchInput = document.getElementById("searchInput");
+.ai-box {
+    background: linear-gradient(135deg, #00843d, #006b32);
+    color: white;
+    border-radius: 25px;
+    padding: 55px 30px;
+    text-align: center;
+}
 
-    if (searchInput) {
+.ai-box h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
 
-        searchInput.addEventListener("keydown", function (event) {
+.ai-box p {
+    max-width: 650px;
+    margin: auto auto 25px;
+    line-height: 1.7;
+    color: #e5f9ec;
+}
 
-            if (event.key === "Enter") {
-                searchSite();
-            }
+/* FOOTER */
 
-        });
+footer {
+    background: #123526;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
 
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #b8c8bf;
+    margin: 7px;
+}
+
+/* MOBİL */
+
+@media (max-width: 850px) {
+
+    nav {
+        display: none;
     }
 
-});
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
+    .subjects {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-// ================================
-// SAYFA YÜKLENDİ
-// ================================
+    .hero h1 {
+        font-size: 48px;
+    }
+}
 
-document.addEventListener("DOMContentLoaded", function () {
+@media (max-width: 550px) {
 
-    console.log("BilimTM üstünlikli açyldy.");
+    header {
+        padding: 0 20px;
+    }
 
-});
+    .cards,
+    .subjects {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .search-box button {
+        padding: 14px;
+    }
+}
