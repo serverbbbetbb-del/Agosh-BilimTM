@@ -1,76 +1,357 @@
-<div class="subject" onclick="soon('Türkmen dili')">
-        🔤 &nbsp; Türkmen dili
+<!DOCTYPE html>
+<html lang="tk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BilimTM - Türkmenistanda Sanly Bilim</title>
+
+    <!-- CSS DOSYASI -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="logo">
+            🇹🇲 BilimTM
+        </div>
+
+        <button id="menuButton" class="menu-button">
+            ☰
+        </button>
+
+        <nav id="navigation">
+
+            <a href="#home">
+                Baş sahypa
+            </a>
+
+            <a href="#features">
+                Mümkinçilikler
+            </a>
+
+            <a href="#subjects">
+                Dersler
+            </a>
+
+            <a href="#ai">
+                BilimTM AI
+            </a>
+
+        </nav>
+
+    </header>
+
+    <!-- TÜRKMEN HALY DESENİ -->
+    <div class="carpet"></div>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="flag">
+                🇹🇲
+            </div>
+
+            <h1>
+                Bilim<span>TM</span>
+            </h1>
+
+            <h2>
+                Türkmenistan üçin sanly bilim platformasy
+            </h2>
+
+            <p>
+                Kitaplary öwreniň, öý işleriňize kömek alyň,
+                testleri çözüň we bilim almak üçin BilimTM AI-dan peýdalanyň.
+            </p>
+
+            <a href="#features" class="button button-white">
+                Başlamak
+            </a>
+
+            <a href="#subjects" class="button button-red">
+                Derslere seret
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- SEARCH -->
+    <div class="search-area">
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Kitap, ders ýa-da mowzuk gözläň..."
+            >
+
+            <button id="searchButton">
+                Gözle
+            </button>
+
+        </div>
+
     </div>
 
-    <div class="subject" onclick="soon('Türkmen edebiýaty')">
-        📖 &nbsp; Türkmen edebiýaty
-    </div>
 
-    <div class="subject" onclick="soon('Taryh')">
-        🏛️ &nbsp; Taryh
-    </div>
+    <!-- MÜMKINÇILIKLER -->
+    <section class="container" id="features">
 
-    <div class="subject" onclick="soon('Geografiýa')">
-        🌍 &nbsp; Geografiýa
-    </div>
+        <div class="title">
 
-</div>
+            <small>BILIMTM</small>
 
-</div></section><section class="ai-section" id="ai"><div class="container"><div class="ai-box">
+            <h2>
+                Hemme zat bir ýerde
+            </h2>
 
-    <h2>🤖 BilimTM AI</h2>
+            <p>
+                Bilim almak üçin zerur bolan esasy mümkinçilikler.
+            </p>
 
-    <p>
-        Öý işleriňize we dersleriňize kömek edýän
-        ýörite AI kömekçi.
-    </p>
+        </div>
 
-    <button
-        class="button button-white"
-        onclick="soon('BilimTM AI')"
-    >
-        Tiz wagtdan
-    </button>
 
-</div>
+        <div class="cards">
 
-</div></section><footer><h2>🇹🇲 BilimTM</h2>
+            <!-- KITAPLAR -->
+            <div
+                class="card"
+                data-coming-soon="Kitaplar"
+            >
 
-<p>
-    Türkmenistan üçin sanly bilim platformasy.
-</p>
+                <div class="card-icon">
+                    📚
+                </div>
 
-<p>
-    © 2026 BilimTM
-</p>
+                <h3>
+                    Kitaplar
+                </h3>
 
-</footer><script>
+                <p>
+                    Ders kitaplaryna we okuw materiallaryna
+                    aňsatlyk bilen giriň.
+                </p>
 
-function soon(name) {
+            </div>
 
-    alert(
-        name + " bölümi indiki tapgyrda goşular."
-    );
 
-}
+            <!-- ÖÝ IŞI -->
+            <div
+                class="card"
+                data-coming-soon="Öý işlerine kömek"
+            >
 
-function searchSite() {
+                <div class="card-icon">
+                    📝
+                </div>
 
-    const text =
-        document.getElementById("searchInput").value.trim();
+                <h3>
+                    Öý işlerine kömek
+                </h3>
 
-    if (text === "") {
+                <p>
+                    Öý işleriňizi düşünmek we çözmek üçin
+                    kömek alyň.
+                </p>
 
-        alert("Gözlemek üçin bir zat ýazyň.");
+            </div>
 
-        return;
-    }
 
-    alert(
-        '"' + text + '" üçin gözleg ulgamy indiki tapgyrda goşular.'
-    );
+            <!-- TESTLER -->
+            <div
+                class="card"
+                data-coming-soon="Testler"
+            >
 
-}
+                <div class="card-icon">
+                    🧠
+                </div>
 
-</script></body>
+                <h3>
+                    Testler
+                </h3>
+
+                <p>
+                    Bilimiňizi dürli testler arkaly barlaň
+                    we özüňizi synap görüň.
+                </p>
+
+            </div>
+
+
+            <!-- AI -->
+            <div
+                class="card"
+                data-coming-soon="BilimTM AI"
+            >
+
+                <div class="card-icon">
+                    🤖
+                </div>
+
+                <h3>
+                    BilimTM AI
+                </h3>
+
+                <p>
+                    Soraglaryňyza jogap almak we dersleri
+                    öwrenmek üçin AI kömekçisi.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DERSLER -->
+    <section class="subject-section" id="subjects">
+
+        <div class="container">
+
+            <div class="title">
+
+                <small>DERSLER</small>
+
+                <h2>
+                    Ders saýlaň
+                </h2>
+
+                <p>
+                    Öwrenmek isleýän dersiňizi saýlaň.
+                </p>
+
+            </div>
+
+
+            <div class="subjects">
+
+                <div
+                    class="subject"
+                    data-coming-soon="Matematika"
+                >
+                    📐 Matematika
+                </div>
+
+                <div
+                    class="subject"
+                    data-coming-soon="Fizika"
+                >
+                    ⚛️ Fizika
+                </div>
+
+                <div
+                    class="subject"
+                    data-coming-soon="Himiýa"
+                >
+                    🧪 Himiýa
+                </div>
+
+                <div
+                    class="subject"
+                    data-coming-soon="Biologiýa"
+                >
+                    🧬 Biologiýa
+                </div>
+
+                <div
+                    class="subject"
+                    data-coming-soon="Türkmen dili"
+                >
+                    📖 Türkmen dili
+                </div>
+
+                <div
+                    class="subject"
+                    data-coming-soon="Türkmen edebiýaty"
+                >
+                    ✍️ Türkmen edebiýaty
+                </div>
+
+                <div
+                    class="subject"
+                    data-coming-soon="Taryh"
+                >
+                    🏛️ Taryh
+                </div>
+
+                <div
+                    class="subject"
+                    data-coming-soon="Geografiýa"
+                >
+                    🌍 Geografiýa
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- AI -->
+    <section class="ai-section" id="ai">
+
+        <div class="container">
+
+            <div class="ai-box">
+
+                <h2>
+                    🤖 BilimTM AI
+                </h2>
+
+                <p>
+                    Dersleriňizi öwrenmäge, öý işleriňizi düşünmäge
+                    we dürli soraglara jogap tapmaga kömek edýän
+                    akylly bilim kömekçisi.
+                </p>
+
+                <button
+                    class="button button-white"
+                    data-coming-soon="BilimTM AI"
+                >
+                    AI bilen başla
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h2>
+            🇹🇲 BilimTM
+        </h2>
+
+        <p>
+            Türkmenistan üçin sanly bilim platformasy.
+        </p>
+
+        <p>
+            © 2026 BilimTM
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT DOSYASI -->
+    <script src="script.js"></script>
+
+</body>
 </html>
